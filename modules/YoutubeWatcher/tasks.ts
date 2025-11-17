@@ -35,9 +35,9 @@ export default class Tasks {
 		if (instance) return instance;
 
 		instance = this;
-		cron.schedule("* * * * *", async () => {
-			await this.task();
-		});
+		// cron.schedule("* * * * *", async () => {
+		// 	await this.task();
+		// });
 	}
 
 	async task() {
